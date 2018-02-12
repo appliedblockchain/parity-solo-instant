@@ -1,0 +1,27 @@
+[parity]
+chain = "/solo/chain.json"
+
+db_path = "/solo/chains"
+keys_path = "/solo/keys"
+
+[network]
+reserved_only = true
+
+[account]
+unlock = ["0x1F2e5282481C07BC8B7b07E53Bc3EF6A8012D6b7"]
+password = ["/solo/pw.txt"]
+
+[rpc]
+interface = "0.0.0.0"
+cors = "all"
+hosts = ["all"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_accounts", "signer", "parity_set"]
+
+[ui]
+force = true
+interface = "0.0.0.0"
+
+[mining]
+reseal_max_period = 3600000
+gas_floor_target = "5000000000"
+engine_signer = "0x1F2e5282481C07BC8B7b07E53Bc3EF6A8012D6b7"
