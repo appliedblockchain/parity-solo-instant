@@ -20,7 +20,6 @@ apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_acc
 [ui]
 force = true
 interface = "0.0.0.0"
-unsafe_expose = true
 
 [mining]
 reseal_max_period = 3600000
