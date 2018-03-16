@@ -20,8 +20,9 @@ apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_acc
 [ui]
 force = true
 interface = "0.0.0.0"
+unsafe_expose = true
 
 [mining]
 reseal_max_period = 3600000
-gas_floor_target = "5000000000"
 engine_signer = "0x1F2e5282481C07BC8B7b07E53Bc3EF6A8012D6b7"
+gasprice = 0
