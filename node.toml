@@ -24,3 +24,4 @@ interface = "0.0.0.0"
 [mining]
 reseal_max_period = 1000
 engine_signer = "0x1F2e5282481C07BC8B7b07E53Bc3EF6A8012D6b7"
+tx_gas_limit = "50000000"
