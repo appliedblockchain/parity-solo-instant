@@ -1,6 +1,8 @@
 version: 2
 jobs:
   build_master:
+    docker:
+      - image: docker
     steps:
       - setup_remote_docker
       - checkout
@@ -11,6 +13,8 @@ jobs:
             echo $DOCKER_PASSWORD | docker login --username $DOCKER_USER --password-stdin
             docker push appliedblockchain/parity-solo-instant
   build_tag:
+    docker:
+      - image: docker
     steps:
       - setup_remote_docker
       - checkout
@@ -27,5 +31,11 @@ workflows:
     jobs:
       - build_master:
           context: org-global
+          filters:
+            branches:
+              only: master
       - build_tag:
           context: org-global
+          filters:
+            tags:
+              only: /v.*/
