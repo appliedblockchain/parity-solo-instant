@@ -1,4 +1,4 @@
-FROM parity/parity:v1.8.9
+FROM parity/parity:v1.10.7
 
 COPY node.toml chain.json pw.txt /solo/
 COPY keys/ /solo/keys/
