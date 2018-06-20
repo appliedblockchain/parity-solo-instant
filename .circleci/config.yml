@@ -14,7 +14,7 @@ jobs:
             docker push appliedblockchain/parity-solo-instant
   build_tag:
     docker:
-      - image: docker
+      - image: docker:stable-git
     steps:
       - setup_remote_docker
       - checkout
