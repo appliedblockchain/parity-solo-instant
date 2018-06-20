@@ -2,7 +2,7 @@ version: 2
 jobs:
   build_master:
     docker:
-      - image: docker
+      - image: docker:stable-git
     steps:
       - setup_remote_docker
       - checkout
