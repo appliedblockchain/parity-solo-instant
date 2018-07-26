@@ -13,7 +13,11 @@
     "maximumExtraDataSize": "0x20",
     "minGasLimit": "0x2faf080",
     "networkID": "0x04",
-    "gasLimitBoundDivisor": "0x400"
+    "gasLimitBoundDivisor": "0x400",
+    "eip140Transition": 0,
+    "eip211Transition": 0,
+    "eip214Transition": 0,
+    "eip658Transition": 0
   },
   "accounts": {
     "0x0000000000000000000000000000000000000001": {
