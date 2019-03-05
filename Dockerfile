@@ -1,6 +1,6 @@
-FROM parity/parity:v1.10.7
+FROM parity/parity:v2.4.0
 
-COPY node.toml chain.json pw.txt /solo/
-COPY keys/ /solo/keys/
+COPY --chown=parity:parity node.toml chain.json pw.txt /solo/
+COPY --chown=parity:parity keys/ /solo/keys/
 
-ENTRYPOINT ["/parity/parity", "--config", "/solo/node.toml", "--unsafe-expose", "--gasprice", "0"]
+ENTRYPOINT ["parity", "--config", "/solo/node.toml", "--unsafe-expose", "--gasprice", "0"]
