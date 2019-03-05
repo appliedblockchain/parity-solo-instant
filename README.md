@@ -12,7 +12,6 @@ docker run -p 8545:8545 -p 8546:8546 appliedblockchain/parity-solo-instant
 
 This will start a single Parity node running an InstantSeal chain readily accessible at port 8545.
 
-
 ## Available accounts
 
 The following accounts are unlocked and endowed with a lot of Ether:
