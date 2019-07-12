@@ -1,4 +1,4 @@
-FROM parity/parity:v2.4.0
+FROM parity/parity:v2.5.5-stable
 
 # necessary for compatibility with docker volumes, which are owned by root
 USER root
